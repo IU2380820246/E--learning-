@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard | EduStream Pro</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar">
+    <div class="logo">EduStream<span>Pro</span></div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="courses.html">Courses</a>
+      <a href="dashboard.html" class="active">Dashboard</a>
+      <a href="#" class="btn-nav" onclick="logout()">Logout</a>
+    </nav>
+  </header>
+
+  <!-- ===== DASHBOARD ===== -->
+  <section class="dashboard">
+    <h2 id="welcomeText">Welcome 👋</h2>
+
+    <div class="dashboard-cards">
+
+      <!-- Profile Card -->
+      <div class="dash-card">
+        <h3>Your Profile</h3>
+        <p><strong>Name:</strong> <span id="userName">-</span></p>
+        <p><strong>Email:</strong> <span id="userEmail">-</span></p>
+      </div>
+
+      <!-- Courses Card -->
+      <div class="dash-card">
+        <h3>Enrolled Courses</h3>
+        <ul id="enrolledCourses">
+          <li>No courses enrolled yet</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- JS -->
+  <script src="js/dashboard.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
