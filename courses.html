@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Courses | EduStream Pro</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar">
+    <div class="logo">EduStream<span>Pro</span></div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="courses.html" class="active">Courses</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="#" class="btn-nav" onclick="logout()">Logout</a>
+    </nav>
+  </header>
+
+  <!-- ===== COURSES SECTION ===== -->
+  <section class="courses">
+    <h2>Our Popular Courses</h2>
+
+    <div class="course-grid">
+
+      <div class="course-card">
+        <h3>Web Development</h3>
+        <p>Learn HTML, CSS, JavaScript from scratch</p>
+        <button onclick="enrollCourse('Web Development')" class="btn primary">
+          Enroll Now
+        </button>
+      </div>
+
+      <div class="course-card">
+        <h3>JavaScript Mastery</h3>
+        <p>Deep dive into modern JavaScript concepts</p>
+        <button onclick="enrollCourse('JavaScript Mastery')" class="btn primary">
+          Enroll Now
+        </button>
+      </div>
+
+      <div class="course-card">
+        <h3>UI / UX Design</h3>
+        <p>Design beautiful and user-friendly interfaces</p>
+        <button onclick="enrollCourse('UI / UX Design')" class="btn primary">
+          Enroll Now
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- JS -->
+  <script src="js/courses.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
